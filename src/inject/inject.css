@@ -1,0 +1,77 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+.actions-filter {
+  margin-bottom: 8px;
+}
+.actions-filter .active {
+  background: #c7c7c7;
+  color: #686868;
+}
+.actions-filter .quiet-button {
+  display: inline-block;
+}
+
+.js-list-actions.only-comments .phenom {
+  display: none;
+}
+.js-list-actions.only-comments .phenom.phenom-comment {
+  display: block;
+}
+
+/**
+ * Show card number
+ */
+.card-short-id.hide {
+  display: inline-block;
+  font-weight: bold;
+  color: #a6a6a6;
+  /*background: #f5f5f5;*/
+  margin-right: 5px;
+  /*border: 1px solid #ccc;*/
+  border-radius: 2px;
+  font-size: 95%;
+}
+
+/**
+ * Labels
+ */
+.badges {
+  width: 100%;
+}
+.badge.project {
+  float: right;
+  margin: 0 0 3px 3px;
+  padding: 0 4px;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+/**
+ * Larger modal window
+ */
+.window-overlay .window {
+  width: 98% !important;
+}
+
+body .window-main-col {
+  width: 80%;
+}
+.medium-window  .window-main-col {
+  width: 75%;
+}
+.small-window  .window-main-col {
+  width: auto;
+}
+.window-wrapper {
+  height: 100%;
+}
+
+body[style="background-color: rgb(189, 111, 50);"] {
+  /*background: linear-gradient(90deg, #485563 10%, #29323c 90%) !important;*/
+  background: linear-gradient(340deg, #ff8a00 10%, #ff6600 90%) !important;
+}
+a[style*="#BD6F32"] {
+  background-color: #ff6600 !important;
+}
