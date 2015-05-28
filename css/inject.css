@@ -68,10 +68,12 @@ body .window-main-col {
   height: 100%;
 }
 
-body[style="background-color: rgb(189, 111, 50);"] {
-  /*background: linear-gradient(90deg, #485563 10%, #29323c 90%) !important;*/
+/*body[style="background-color: rgb(189, 111, 50);"],
+body[style="background-color: rgb(206, 120, 34);"] {
+  background: linear-gradient(90deg, #485563 10%, #29323c 90%) !important;
   background: linear-gradient(340deg, #ff8a00 10%, #ff6600 90%) !important;
 }
+a[style*="#CE7822"],
 a[style*="#BD6F32"] {
   background-color: #ff6600 !important;
-}
+}*/

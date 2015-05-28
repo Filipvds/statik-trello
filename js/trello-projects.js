@@ -20,7 +20,7 @@ function showLabels() {
                 new List(this);
         });
     });
-};
+}
 
 function List(el) {
     if (el.list)
@@ -42,14 +42,14 @@ function List(el) {
             else
                 setTimeout(this.listCard.refresh);
         });
-    };
+    }
 
     $list.on('DOMNodeInserted', readCard);
 
     setTimeout(function() {
         readCard($list.find('.list-card'));
     });
-};
+}
 
 function ListCard(el) {
     if (el.listCard)
@@ -93,9 +93,7 @@ function ListCard(el) {
             } else {
                 var origTitle = $title.data('orig-title');
                 el._title = origTitle;
-                console.log(origTitle);
                 parsed=origTitle.match(regexp);
-                console.log(parsed);
                 label=parsed ? parsed : -1;
             }
 
@@ -117,12 +115,12 @@ function ListCard(el) {
                             recursiveReplace();
                         }
                     }
-                };
+                }
                 recursiveReplace();
 
                 var list = $card.closest('.list');
                 busy = false;
-            })
+            });
         });
     };
 
@@ -137,4 +135,4 @@ function ListCard(el) {
     });
 
     setTimeout(that.refresh);
-};
+}

@@ -1,6 +1,6 @@
 {
   "name": "Statik Trello",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "manifest_version": 2,
   "description": "Enhance the trello experience",
   "homepage_url": "http://www.statik.be",
@@ -12,7 +12,8 @@
   },
   "default_locale": "en",
   "permissions": [
-    "https://trello.com/*"
+    "https://trello.com/*",
+    "http://*.statik.be/*"
   ],
   "content_scripts": [
     {
@@ -20,13 +21,19 @@
         "https://trello.com/*"
       ],
       "js": [
-        "src/inject/jquery-1.11.1.min.js",
-        "src/inject/inject.js",
-        "src/inject/trello-projects.js"
+        "js/jquery-1.11.1.min.js",
+        "js/inject.js",
+        "js/trello-projects.js"
       ],
       "css": [
-        "src/inject/inject.css"
+        "css/inject.css"
       ]
     }
-  ]
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  }
 }
